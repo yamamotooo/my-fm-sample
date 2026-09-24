@@ -1,5 +1,5 @@
 <Script id="3" name="名前でソート">
-	<UUID modifications="5" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T12:48:22">5596E104-FC4A-407E-9294-63B2BE494E2D</UUID>
+	<UUID modifications="8" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T15:45:13">5596E104-FC4A-407E-9294-63B2BE494E2D</UUID>
 	<SourceUUID>726AF9C3-D09C-4E04-BCF6-84626E5E8C83</SourceUUID>
 	<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 </Script>

@@ -13,14 +13,19 @@ Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " 
 Insert Text [ Select ; Target: $bytes ; "@echo off
 				set "OUT=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\out\連絡先"
 				set "REP=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\rep"
+				set "LOG=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\push_log.txt"
+				set "GIT=C:\Program Files\Git\cmd\git.exe"
 				
-				robocopy "%OUT%" "%REP%" /MIR /XD .git
+				echo ===== %date% %time% ===== >> "%LOG%"
+				
+				robocopy "%OUT%" "%REP%" /MIR /XD .git >> "%LOG%" 2>&1
 				
 				cd /d "%REP%"
-				git add --all
-				git commit -m "Auto update"
-				git push origin main
-				" ]
+				"%GIT%" add --all >> "%LOG%" 2>&1
+				"%GIT%" commit -m "Auto update" >> "%LOG%" 2>&1
+				"%GIT%" push origin main >> "%LOG%" 2>&1
+				
+				echo ===== Done ===== >> "%LOG%"" ]
 Set Variable [ $bytes[1] ; TextEncode ( $bytes ; "shift_jis" ; 4 ) ]
 Set Variable [ $file[1] ; Filter ( Get ( CurrentTimeStamp ); "1234567890" ) & ".bat" ]
 Set Variable [ $path[1] ; Get ( DocumentsPath ) & $file ]
@@ -30,7 +35,7 @@ Write to Data File [ ⚠️ PARAMETER "id" NOT PARSED ⚠️ ; Target: $bytes ; 
 Close Data File [ ⚠️ PARAMETER "id" NOT PARSED ⚠️ ]
 
 # #
-Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( "cmd /c C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents" & Char ( 92 ) & $file; 30000 ) ]
+Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( "cmd /c C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents" & Char ( 92 ) & $file; 300000 ) ]
 Delete File [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ]
 
 # git config --global user.name "fm-export-bot"

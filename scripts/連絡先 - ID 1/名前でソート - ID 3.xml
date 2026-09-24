@@ -26,24 +26,11 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="68CB0239B25C34566641DC804905D2B1" id="87" name="Show Custom Dialog" enable="True">
-			<Options>16389</Options>
-			<ParameterValues membercount="4">
-				<Parameter type="Message">
-					<Calculation datatype="1" position="1">
-						<Calculation>
-							<Text><![CDATA["hgoe"]]></Text>
-						</Calculation>
-					</Calculation>
-				</Parameter>
-				<Parameter type="Button1" value="OK">
-					<Boolean type="Commit" value="True"></Boolean>
-				</Parameter>
-				<Parameter type="Button2" value="キャンセル">
-					<Boolean type="Commit" value="False"></Boolean>
-				</Parameter>
-				<Parameter type="Button3">
-					<Boolean type="Commit" value="False"></Boolean>
+		<Step hash="B5379C375DB40E5853C5C9C201C7F26E" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="コメント追加"></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
