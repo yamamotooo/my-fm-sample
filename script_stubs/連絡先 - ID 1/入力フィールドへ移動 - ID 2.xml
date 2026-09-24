@@ -1,0 +1,5 @@
+<Script id="2" name="入力フィールドへ移動">
+	<UUID modifications="2" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:15">D0D74055-BDC3-4F94-BB4B-3A07DDB58597</UUID>
+	<SourceUUID>F06E54F8-72AB-4062-A48F-6DFC2C912432</SourceUUID>
+	<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
+</Script>

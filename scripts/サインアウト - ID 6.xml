@@ -1,0 +1,33 @@
+<Script>
+	<ScriptReference id="6" name="サインアウト"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step hash="FD1D566684378591B4729EEA78B3AE14" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="E76E6F2E03688E36691085BD2F0FC666" id="111" name="Open URL" enable="True">
+			<Options>16768</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="In external browser" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="URL">
+					<URL autoEncode="False">
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA["https://login.microsoftonline.com/common/oauth2/v2.0/logout"]]></Text>
+							</Calculation>
+						</Calculation>
+					</URL>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

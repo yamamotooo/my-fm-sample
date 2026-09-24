@@ -1,0 +1,13 @@
+<ValueList id="6" name="役職">
+	<Source value="FromField"></Source>
+	<Field>
+		<PrimaryField show="True" sort="True">
+			<FieldReference id="6" name="役職">
+				<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+			</FieldReference>
+		</PrimaryField>
+		<ShowRelated value="False"></ShowRelated>
+	</Field>
+	<UUID modifications="1" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">5A838FE0-8ACB-4946-A926-7FC267BE3685</UUID>
+	<SourceUUID>20C84646-4AE6-4DA3-962B-AC1F8298F60D</SourceUUID>
+</ValueList>

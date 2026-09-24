@@ -1,0 +1,23 @@
+<Script>
+	<ScriptReference id="5" name="再ログイン"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step hash="4CDFAAC588E11EA73D940A8E631D8ED1" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="300A68F2ED59733137B89A0461F88762" id="138" name="Re-Login" enable="True">
+			<ParameterValues membercount="2">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="0" name="Current File"></DataSourceReference>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

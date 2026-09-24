@@ -1,0 +1,9 @@
+<TableOccurrence View="Related" height="74" id="1065093" name="電子メールアドレス" type="Local">
+	<UUID modifications="2" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">586A100F-F1B6-409C-959B-8FEBFD7D83AA</UUID>
+	<SourceUUID>1C22C2D3-BCB6-4A9E-AFBC-D1BA310C01D5</SourceUUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="133" name="電子メールアドレス"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="138" left="210" bottom="256" right="341"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

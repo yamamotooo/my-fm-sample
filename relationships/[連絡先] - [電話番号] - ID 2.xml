@@ -1,0 +1,24 @@
+<Relationship id="2">
+	<UUID modifications="0" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">878B4560-F125-48E7-A403-6371F33661DB</UUID>
+	<SourceUUID>EC2BE6DF-C3FE-42C3-8A61-88CFC3DA0781</SourceUUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+	</LeftTable>
+	<RightTable cascadeCreate="True" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="9" name="主キー">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="5" name="外部キー">
+					<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

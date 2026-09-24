@@ -1,0 +1,8 @@
+<ValueList id="1" name="電話のタイプ">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[自宅モバイル勤務先Fax]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">F483A9F7-73AF-4542-86D6-0CE5F6EC606B</UUID>
+	<SourceUUID>87424100-0186-4A65-B53D-5CF5315D8D3B</SourceUUID>
+</ValueList>

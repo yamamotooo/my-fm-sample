@@ -1,0 +1,233 @@
+<Layout id="7" name="名刺（縦）" width="680">
+	<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+	<LayoutThemeReference id="2" name="com.filemaker.theme.apex_blue" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="1">
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="420" absolute="0" Options="0"></Definition>
+			<ObjectList membercount="5">
+				<LayoutObject hash="4F257E9A97CFD2B1209BCB6BC8177074" id="1" type="Graphic" name="" kind="3">
+					<Bounds top="0" left="0" bottom="420" right="680"></Bounds>
+					<Options>805306368</Options>
+					<Graphic>
+						<Formatting>
+							<Options>3</Options>
+						</Formatting>
+						<BinaryData>
+							<LibraryReference id="9" key="77255852EFB105E7F631C13037FAA6A9"></LibraryReference>
+						</BinaryData>
+					</Graphic>
+				</LayoutObject>
+				<LayoutObject hash="304C4484B65C8816B4F16A986C8222B8" id="5" type="Rectangle" name="" kind="5">
+					<Bounds top="12" left="12" bottom="402" right="662"></Bounds>
+					<Options>805306368</Options>
+					<Rectangle renderFormat="0"></Rectangle>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-image-source: none;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="FC01CDA9402234640DF26B5D82F42010" id="2" type="Text" name="" kind="2">
+					<Bounds top="50" left="79" bottom="88" right="649"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>10</Options>
+						<StyledText>
+							<Data><![CDATA[<<会社>>]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	font-size: 24pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="5" name="会社" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+				<LayoutObject hash="4A1B11893F720BF69A6163373F2C1103" id="3" type="Text" name="" kind="2">
+					<Bounds top="153" left="213" bottom="235" right="448"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>8</Options>
+						<StyledText>
+							<Data><![CDATA[<<役職>><<姓>> <<名>>]]></Data>
+							<CharacterStyleList membercount="1">
+								<CharacterStyle Start="7" End="4294967295">
+									<Text><![CDATA[<<姓>> <<名>>]]></Text>
+									<Style>
+										<FontStyle size="36" mask="2"></FontStyle>
+									</Style>
+								</CharacterStyle>
+							</CharacterStyleList>
+						</StyledText>
+					</Text>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="1" name="名" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="2" name="姓" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="6" name="役職" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+				<LayoutObject hash="0384E0584C63B1845D76D9FDAD277499" id="4" type="Text" name="" kind="2">
+					<Bounds top="313" left="74" bottom="388" right="614"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>10</Options>
+						<StyledText>
+							<Data><![CDATA[〒<<住所::郵便番号>> <<住所::州>> <<住所::市>> <<住所::住所 1>>TEL: <<電話番号::番号>> FAX: <<電話番号::番号>>e-mail: <<電子メールアドレス::アドレス>>]]></Data>
+						</StyledText>
+					</Text>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="1" name="アドレス" repetition="1">
+							<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="2" name="番号" repetition="1">
+							<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="2" name="番号" repetition="1">
+							<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="2" name="住所 1" repetition="1">
+							<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="3" name="市" repetition="1">
+							<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="4" name="州" repetition="1">
+							<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="5" name="郵便番号" repetition="1">
+							<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<TableView>
+		<ObjectList membercount="10">
+			<TableViewLayoutObject hidden="False" id="4" name="名" width="120">
+				<FieldReference id="1" name="名" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="5" name="姓" width="120">
+				<FieldReference id="2" name="姓" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="6" name="会社" width="120">
+				<FieldReference id="5" name="会社" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="7" name="役職" width="120">
+				<FieldReference id="6" name="役職" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="8" name="住所 1" width="120">
+				<FieldReference id="2" name="住所 1" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="9" name="市" width="120">
+				<FieldReference id="3" name="市" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="10" name="州" width="120">
+				<FieldReference id="4" name="州" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="11" name="郵便番号" width="75">
+				<FieldReference id="5" name="郵便番号" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="12" name="番号" width="120">
+				<FieldReference id="2" name="番号" repetition="1">
+					<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="13" name="アドレス" width="120">
+				<FieldReference id="1" name="アドレス" repetition="1">
+					<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+		</ObjectList>
+	</TableView>
+	<UUID modifications="8" userName="Takeshi Yamamoto" accountName="admin" timestamp="2025-11-28T11:48:49">7A4EC1E5-5558-44BB-89F3-3A5439767CE3</UUID>
+	<GridStyle>
+		<Color red="0.500000" green="0.500000" blue="0.500000" alpha="1.000000"></Color>
+		<Style>5</Style>
+	</GridStyle>
+	<ClientType>3</ClientType>
+	<Options hidden="False">64708872193</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
+</Layout>

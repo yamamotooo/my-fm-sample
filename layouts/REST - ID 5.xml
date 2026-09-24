@@ -1,0 +1,770 @@
+<Layout id="5" name="REST" width="1024">
+	<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+	<LayoutThemeReference id="2" name="com.filemaker.theme.apex_blue" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="110" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="851" absolute="110" Options="0"></Definition>
+			<ObjectList membercount="28">
+				<LayoutObject hash="1398AB14C1237A8395D432D58F36AC98" id="27" type="Edit Box" name="" kind="1">
+					<Bounds top="116" left="191" bottom="153" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="1" name="名" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>28</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="29C8CC1C8B6863E54EDABADB4CD2AE11" id="28" type="Text" name="" kind="2">
+					<Bounds top="122" left="159" bottom="148" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[名]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="8154DB453DFC34819EC822F428F77B9E" id="29" type="Edit Box" name="" kind="1">
+					<Bounds top="157" left="191" bottom="194" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="2" name="姓" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>30</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="9483D76921D755D2B648E614436A0424" id="30" type="Text" name="" kind="2">
+					<Bounds top="163" left="159" bottom="189" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[姓]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="AB9FE881DCCE3471BE68AA6975FBA27F" id="31" type="Container" name="" kind="1">
+					<Bounds top="198" left="191" bottom="323" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="3" name="写真" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>32</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="9B1A8E2FD7CC6D58E82EBA0B77E925C2" id="32" type="Text" name="" kind="2">
+					<Bounds top="204" left="143" bottom="230" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[写真]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="D4EB9EDC47179F443C4A45A0123083F4" id="33" type="Edit Box" name="" kind="1">
+					<Bounds top="327" left="191" bottom="364" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="4" name="敬称" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>34</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="7AB933356FCF310DC08449256509DED7" id="34" type="Text" name="" kind="2">
+					<Bounds top="333" left="143" bottom="359" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[敬称]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="7059779236E05FBC129527C00589DAE4" id="35" type="Edit Box" name="" kind="1">
+					<Bounds top="368" left="191" bottom="405" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="5" name="会社" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>36</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="66F6C0AFAAF0D5B882709F9EE152E3F9" id="36" type="Text" name="" kind="2">
+					<Bounds top="374" left="143" bottom="400" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[会社]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="767D958064FA5FB2921974665142B9FF" id="37" type="Edit Box" name="" kind="1">
+					<Bounds top="409" left="191" bottom="446" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="6" name="役職" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>38</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="6CC0B3B313BEA407B5731AF6E19861B7" id="38" type="Text" name="" kind="2">
+					<Bounds top="415" left="143" bottom="441" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[役職]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="FF029A11947FACCC18D9E456A3FE2A75" id="39" type="Edit Box" name="" kind="1">
+					<Bounds top="450" left="191" bottom="487" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="7" name="Web サイト" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>40</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="67FE578B43C5E71621A64336FC1A8F85" id="40" type="Text" name="" kind="2">
+					<Bounds top="456" left="86" bottom="482" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Web サイト]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="76CA713C2AAC1F83C3C8D88ED59FAED5" id="41" type="Edit Box" name="" kind="1">
+					<Bounds top="491" left="191" bottom="528" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="8" name="イニシャル" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>42</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="A3FC87ED73D9987B4CCB61A545830ADC" id="42" type="Text" name="" kind="2">
+					<Bounds top="497" left="97" bottom="523" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[イニシャル]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="12CCBD1C27DE1DA4665FD3A9C4BB1C05" id="43" type="Edit Box" name="" kind="1">
+					<Bounds top="532" left="191" bottom="569" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="9" name="主キー" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>44</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="1429DBE3571377A98666D770B0A26489" id="44" type="Text" name="" kind="2">
+					<Bounds top="538" left="127" bottom="564" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[主キー]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="165255CBDFE07F95C2EC1C473CD4F913" id="45" type="Edit Box" name="" kind="1">
+					<Bounds top="573" left="191" bottom="610" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="10" name="作成者" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>46</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="08C3FAB2DC87394030BE706699190DBE" id="46" type="Text" name="" kind="2">
+					<Bounds top="579" left="127" bottom="605" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[作成者]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="F5F42F2C6377F02CD9C1BE1C67A3C341" id="47" type="Edit Box" name="" kind="1">
+					<Bounds top="614" left="191" bottom="651" right="444"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="11" name="修正者" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>48</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="69BF14E04AA11EE03B731DDEC733A2B3" id="48" type="Text" name="" kind="2">
+					<Bounds top="620" left="127" bottom="646" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[修正者]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="857C0C0EE83890BC9D4DCB119ADC696C" id="49" type="Edit Box" name="" kind="1">
+					<Bounds top="655" left="191" bottom="692" right="432"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="12" name="作成情報タイムスタンプ" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>50</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="0CD6496DA73D35C83455579A7AE8D5C1" id="50" type="Text" name="" kind="2">
+					<Bounds top="661" left="0" bottom="687" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[作成情報タイムスタンプ]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="E3744E526D752DF1E46EF4117D205592" id="51" type="Edit Box" name="" kind="1">
+					<Bounds top="696" left="191" bottom="733" right="432"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="13" name="修正情報タイムスタンプ" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>52</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="76B595108A91359A85B19BB6CCDE4305" id="52" type="Text" name="" kind="2">
+					<Bounds top="702" left="0" bottom="728" right="180"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[修正情報タイムスタンプ]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="4477E95DD6AFFC75F5403ABC93BCC467" id="53" type="Edit Box" name="" kind="1">
+					<Bounds top="743" left="191" bottom="780" right="432"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="14" name="z_削除フラグ" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>54</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject hash="ECAA40E2F87A72BDBDD037AFB37B56B2" id="54" type="Text" name="" kind="2">
+					<Bounds top="749" left="75" bottom="776" right="179"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[z_削除フラグ]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<TableView>
+		<ObjectList membercount="14">
+			<TableViewLayoutObject hidden="False" id="3" name="名" width="120">
+				<FieldReference id="1" name="名" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="4" name="姓" width="120">
+				<FieldReference id="2" name="姓" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="5" name="写真" width="75">
+				<FieldReference id="3" name="写真" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="6" name="敬称" width="120">
+				<FieldReference id="4" name="敬称" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="7" name="会社" width="120">
+				<FieldReference id="5" name="会社" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="8" name="役職" width="120">
+				<FieldReference id="6" name="役職" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="9" name="Web サイト" width="120">
+				<FieldReference id="7" name="Web サイト" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="10" name="イニシャル" width="120">
+				<FieldReference id="8" name="イニシャル" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="11" name="主キー" width="120">
+				<FieldReference id="9" name="主キー" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="12" name="作成者" width="120">
+				<FieldReference id="10" name="作成者" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="13" name="修正者" width="120">
+				<FieldReference id="11" name="修正者" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="14" name="作成情報タイムスタンプ" width="150">
+				<FieldReference id="12" name="作成情報タイムスタンプ" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="15" name="修正情報タイムスタンプ" width="150">
+				<FieldReference id="13" name="修正情報タイムスタンプ" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="17" name="z_削除フラグ" width="75">
+				<FieldReference id="14" name="z_削除フラグ" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+		</ObjectList>
+	</TableView>
+	<UUID modifications="2" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-07-21T11:07:59">AEDD32F8-02C8-4DBE-9296-A43CA4866DC9</UUID>
+	<GridStyle>
+		<Color red="0.500000" green="0.500000" blue="0.500000" alpha="1.000000"></Color>
+		<Style>5</Style>
+	</GridStyle>
+	<ClientType>3</ClientType>
+	<Options hidden="False">64708872193</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
+</Layout>

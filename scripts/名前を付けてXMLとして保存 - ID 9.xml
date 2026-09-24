@@ -1,0 +1,465 @@
+<Script>
+	<ScriptReference id="9" name="名前を付けてXMLとして保存"></ScriptReference>
+	<ObjectList membercount="30">
+		<Step hash="88ACD8EC659204D75DBBFB59D5AF4748" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="774D6499F7CC7E4D9E8481FB8C9A9ACB" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( DocumentsPath ) & "in/" & Get ( FileName ) & ".xml"]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$path"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="65E97281DBCD57FC62DB391F00CE0610" id="3" name="Save a Copy as XML" enable="False">
+			<Options>49440</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Include details for analysis tools" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Save each layout object&apos;s binary data under its node" id="512" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Specify options as JSON" id="32768" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="JSONOutput">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA[JSONSetElement ( "{}" ;  [ "catalogs_included" ; JSONMakeArray (  "PersistentStoreCatalog  BaseDirectoryCatalog  FileAccessCatalog  ExternalDataSourceCatalog  BaseTableCatalog  TableOccurrenceCatalog  CustomFunctionsCatalog  ValueListCatalog  FieldCatalog  RelationshipCatalog  CustomMenuCatalog  CustomMenuSetCatalog  ScriptCatalog  ThemeCatalog  LayoutCatalog  LibraryCatalog  PrivilegeSetsCatalog  ExtendedPrivilegesCatalog  AccountsCatalog  Metadata"  ; " " ; JSONString ) ; JSONArray ] ;  [ "include_details" ; False ; JSONBoolean ] ;  [ "split_catalogs" ; False ; JSONBoolean ] ;  [ "standalone_binarydata" ; False ; JSONBoolean ])]]></Text>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="EB4A805E2662C83D1182CDA1F6B6B0F6" id="3" name="Save a Copy as XML" enable="True">
+			<Options>49440</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Include details for analysis tools" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Save each layout object&apos;s binary data under its node" id="512" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Specify options as JSON" id="32768" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="JSONOutput">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA[JSONSetElement ( "{}" ;  [ "catalogs_included";	JSONMakeArray (    List (      //"PersistentStoreCatalog";      //"BaseDirectoryCatalog";      //"FileAccessCatalog";      //"ExternalDataSourceCatalog";      "BaseTableCatalog";      "TableOccurrenceCatalog";      "CustomFunctionsCatalog";      "ValueListCatalog";      "FieldCatalog";      "RelationshipCatalog";      //"CustomMenuCatalog";      //"CustomMenuSetCatalog";      "ScriptCatalog";      "ThemeCatalog";      "LayoutCatalog";      //"LibraryCatalog";      //"PrivilegeSetsCatalog";      //"ExtendedPrivilegesCatalog";      //"AccountsCatalog";      //"Metadata";      //""    ) ; ¶ ; JSONString ) ; JSONArray ] ;  [ "include_details" ; False ; JSONBoolean ] ;  [ "split_catalogs" ; False ; JSONBoolean ] ;  [ "standalone_binarydata" ; False ; JSONBoolean ])]]></Text>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="FDB4360CFF9436A3B631986972706519" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="9FFF6E3E28A2D2C5015C8CBE9CBE824A" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="70176BC18EF383C022B46A04F1436FF6" id="61" name="Insert Text" enable="True">
+			<Options>4103</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$exe">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="C:\ProgramData\FileMaker\fm-xml-export-exploder\fm-xml-export-exploder.exe"></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="0C6E4008298A29615C723B72B683A8EE" id="61" name="Insert Text" enable="True">
+			<Options>4103</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$in">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\in\"></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="5C5BFFA3F903FEA9A75C67B379C90730" id="61" name="Insert Text" enable="True">
+			<Options>4103</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$out">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\out\"></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="4C81F80729780A1173D415ECAD640A1E" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30 )]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$r"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="EDFEC1428763892414DDB5736DA03407" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="EA1CEBCAF1C9610D20294F58F2ED5481" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="9258B0CD76522D6A1350DB45BD3335BF" id="61" name="Insert Text" enable="True">
+			<Options>4103</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$bytes">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="@echo off&#13;set &quot;OUT=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\out\連絡先&quot;&#13;set &quot;REP=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\rep&quot;&#13;&#13;robocopy &quot;%OUT%&quot; &quot;%REP%&quot; /MIR /XD .git&#13;&#13;cd /d &quot;%REP%&quot;&#13;git add --all&#13;git commit -m &quot;Auto update&quot;&#13;git push origin main&#13;"></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="3DC6F77830891FF055646387B3BABF8F" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[TextEncode ( $bytes ; "shift_jis" ; 4 )]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$bytes"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="3A380EDD70F76568088E5D7312316C87" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Filter ( Get ( CurrentTimeStamp ); "1234567890" ) & ".bat"]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$file"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="3A97B7C1192C17DBBC61FDC96199A178" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( DocumentsPath ) & $file]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$path"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="17C049CFF7494EE3BBBCF53733CE5CE9" id="190" name="Create Data File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="DBB71A48A347475E0DC3EA7838586ECE" id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$id">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="2CA910D2229F1C4AF9D0E5CDCA654367" id="192" name="Write to Data File" enable="True">
+			<Options>16903</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$id]]></Text>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$bytes">
+						<repetition>
+							<Calculation datatype="1" position="32">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="1" name="UTF-16"></Encoding>
+				<Parameter type="Boolean">
+					<Boolean type="Append line feed" id="512" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="FA8A189E4CEF5231D9A365C7308D3E3B" id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$id]]></Text>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="E0959C4C1EF3BD9FD2ADD5FAEA995554" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="50B6B5C96A4097A93A144368E82CBA6E" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="CEED14C1F65349F64B6972840EBAA17F" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[BE_ExecuteSystemCommand ( "cmd /c C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents" & Char ( 92 ) & $file; 30000 )]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$r"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="755E660B5FF21225AE9831296FC8BE43" id="197" name="Delete File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="01E4111A54506F1D562B381C216FCE70" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="EC7584D6C7193835AF57A8E8D7D10F40" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="5E40523CBB7FBA1350C2EF12E970C565" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="F5DDD996EB70A9D221BA4B605D38EFA1" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="CF9E693EE6AD1B9763F45B290ACD810F" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="45E06EC93E0C029FCF7DFF1CCEC48A7E" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

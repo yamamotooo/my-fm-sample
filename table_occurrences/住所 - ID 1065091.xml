@@ -1,0 +1,9 @@
+<TableOccurrence View="Related" height="74" id="1065091" name="住所" type="Local">
+	<UUID modifications="2" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">028AFEC3-6569-489A-B258-94F8DB211594</UUID>
+	<SourceUUID>2CC5CEC4-043E-4080-A5B2-435927FFD866</SourceUUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="131" name="住所"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="20" left="210" bottom="138" right="341"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

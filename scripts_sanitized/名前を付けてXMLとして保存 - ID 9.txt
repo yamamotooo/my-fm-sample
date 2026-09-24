@@ -1,0 +1,41 @@
+# #
+Set Variable [ $path[1] ; Get ( DocumentsPath ) & "in/" & Get ( FileName ) & ".xml" ]
+// Save a Copy as XML [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; Include details for analysis tools: ON ; Save each layout object&apos;s binary data under its node: OFF ; Specify options as JSON: ON ; ⚠️ PARAMETER "JSONOutput" NOT PARSED ⚠️ ]
+Save a Copy as XML [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; Include details for analysis tools: ON ; Save each layout object&apos;s binary data under its node: OFF ; Specify options as JSON: ON ; ⚠️ PARAMETER "JSONOutput" NOT PARSED ⚠️ ]
+
+# C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\
+Insert Text [ Select ; Target: $exe ; "C:\ProgramData\FileMaker\fm-xml-export-exploder\fm-xml-export-exploder.exe" ]
+Insert Text [ Select ; Target: $in ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\in\" ]
+Insert Text [ Select ; Target: $out ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\out\" ]
+Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30 ) ]
+
+# #
+Insert Text [ Select ; Target: $bytes ; "@echo off
+				set "OUT=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\out\連絡先"
+				set "REP=C:\Program Files\FileMaker\FileMaker Server\Data\Documents\rep"
+				
+				robocopy "%OUT%" "%REP%" /MIR /XD .git
+				
+				cd /d "%REP%"
+				git add --all
+				git commit -m "Auto update"
+				git push origin main
+				" ]
+Set Variable [ $bytes[1] ; TextEncode ( $bytes ; "shift_jis" ; 4 ) ]
+Set Variable [ $file[1] ; Filter ( Get ( CurrentTimeStamp ); "1234567890" ) & ".bat" ]
+Set Variable [ $path[1] ; Get ( DocumentsPath ) & $file ]
+Create Data File [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; Create folders: OFF ]
+Open Data File [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; Target: $id ]
+Write to Data File [ ⚠️ PARAMETER "id" NOT PARSED ⚠️ ; Target: $bytes ; Append line feed: ON ]
+Close Data File [ ⚠️ PARAMETER "id" NOT PARSED ⚠️ ]
+
+# #
+Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( "cmd /c C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents" & Char ( 92 ) & $file; 30000 ) ]
+Delete File [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ]
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<Script>
+	<ScriptReference id="2" name="入力フィールドへ移動"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step hash="FD2F80042F03CA6D54787A5B3061F502" id="145" name="Go to Object" enable="True">
+			<SourceUUID>1D58DE02-B419-412A-8EC0-B93394F619CD</SourceUUID>
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Object">
+					<Name>
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA[Get ( ScriptParameter )]]></Text>
+							</Calculation>
+						</Calculation>
+					</Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="4568B6EEBFFB121E106DB18A92B78052" id="50" name="Select All" enable="True">
+			<SourceUUID>EBBAF604-D67A-4991-9825-977FA8A2EFF2</SourceUUID>
+		</Step>
+	</ObjectList>
+</Script>

@@ -1,0 +1,1921 @@
+<Layout id="3" name="連絡先詳細" width="1024">
+	<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+	<LayoutThemeReference id="1" name="com.filemaker.theme.universal_touch" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="4">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="50" absolute="0" Options="0">
+				<LocalCSS type="ThemeCustomStyle" name="light-secondary-part" displayName="Secondary"><![CDATA[self.light-secondary-part
+{
+}
+]]></LocalCSS>
+			</Definition>
+			<ObjectList membercount="2">
+				<LayoutObject hash="8E781FAE3CF428F18E86A3FEC964A13E" id="1" type="Button Bar" name="" kind="18">
+					<SourceUUID>7F91D63B-81AB-4043-939E-B958B7F0AF80</SourceUUID>
+					<Bounds top="14" left="349" bottom="35" right="674"></Bounds>
+					<Options>1879048200</Options>
+					<TabOrder membercount="1">
+						<Location id="0">0</Location>
+					</TabOrder>
+					<ButtonBar>
+						<Select>
+							<id>0</id>
+						</Select>
+						<ObjectList membercount="1">
+							<LayoutObject hash="E06DEF83B761E045A2D06C5CBEA6B1E1" id="2" type="Button" name="" kind="10">
+								<SourceUUID>67563577-01FD-4C15-93AA-CC92C1CAEB7A</SourceUUID>
+								<Bounds top="0" left="0" bottom="21" right="325"></Bounds>
+								<Options>805306368</Options>
+								<Button>
+									<Options>2</Options>
+									<Label>
+										<Calculation>
+											<Text><![CDATA["連絡先"]]></Text>
+										</Calculation>
+									</Label>
+									<IconData type="0" size="13"></IconData>
+								</Button>
+								<LocalCSS type="ThemeCustomStyle" name="separator-uppercase-highlight-buttonbar" displayName="Separator | Uppercase | Highlight"><![CDATA[self.separator-uppercase-highlight-buttonbar
+{
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</ButtonBar>
+					<LocalCSS type="ThemeCustomStyle" name="separator-uppercase-highlight-buttonbar" displayName="Separator | Uppercase | Highlight"><![CDATA[self.separator-uppercase-highlight-buttonbar
+{
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="D8C9312D0F3622D510AFBA19C186F14C" id="3" type="Button" name="連絡先に戻る" kind="10">
+					<SourceUUID>517E543E-9FCF-4E64-951E-2E66A9E9964C</SourceUUID>
+					<Bounds top="0" left="0" bottom="44" right="200"></Bounds>
+					<Options>805322752</Options>
+					<TabOrder membercount="1">
+						<Location id="0">26</Location>
+					</TabOrder>
+					<Button>
+						<Label>
+							<Text>
+								<Options>2</Options>
+								<StyledText>
+									<Data><![CDATA[連絡先]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="4" size="13">
+							<BinaryData>
+								<LibraryReference id="3" key="1E8519387D7633F4FD09943BB145FF27"></LibraryReference>
+							</BinaryData>
+						</IconData>
+						<action>
+							<Step hash="AC817776E16F991436A8529D5EC69109" id="6" name="Go to Layout" enable="True">
+								<Options>8</Options>
+								<ParameterValues membercount="2">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5">
+											<LayoutReference id="2" name="連絡先一覧"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+									<Parameter type="Animation">
+										<Animation name="None" value="0"></Animation>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</Button>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: left;
+}
+self:normal .icon
+{
+	background-position: left center;
+}
+]]></LocalCSS>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["連絡先に戻る"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Title Header" kind="0">
+			<Definition type="Title Header" kind="0" size="52" absolute="50" Options="0"></Definition>
+			<ObjectList membercount="1">
+				<LayoutObject hash="EB345768A769A439AF53E51561E31D0E" id="54" type="Text" name="" kind="2">
+					<Bounds top="66" left="15" bottom="93" right="98"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[あいうえお]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(Hiragino Kaku Gothic ProN,HiraKakuProN-W3);
+}
+]]></LocalCSS>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Header" kind="1">
+			<Definition type="Header" kind="1" size="50" absolute="102" Options="0"></Definition>
+			<ObjectList membercount="1">
+				<LayoutObject hash="B81B1FFC0A0E5A78509C72104A62876C" id="51" type="Text" name="" kind="2">
+					<Bounds top="116" left="15" bottom="142" right="1008"></Bounds>
+					<Options>1879048192</Options>
+					<Text>
+						<Options>170</Options>
+						<StyledText>
+							<Data><![CDATA[<<ƒ:Substitute (List ( Get ( アカウント名 );Get ( アカウントグループ名 );Get ( アカウントアクセス権セット名 )); ¶; " " )>>]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ThemeCustomStyle" name="secondary-text" displayName="Secondary"><![CDATA[self.secondary-text:normal .self
+{
+	font-size: 18pt;
+	color: rgba(20%,20%,20%,1);
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>159</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList></FieldList>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="660" absolute="152" Options="1024">
+				<LocalCSS type="ThemeCustomStyle" name="light-secondary-part" displayName="Secondary"><![CDATA[self.light-secondary-part
+{
+}
+]]></LocalCSS>
+			</Definition>
+			<ObjectList membercount="16">
+				<LayoutObject hash="D2D79258CE05FD571C63860750AF21D7" id="4" type="Tab Control" name="" kind="11">
+					<SourceUUID>17BB89D6-3581-4374-AFD9-076630526CD0</SourceUUID>
+					<Bounds top="224" left="349" bottom="665" right="1008"></Bounds>
+					<Options>3758096384</Options>
+					<TabOrder membercount="1">
+						<Location id="0">8</Location>
+					</TabOrder>
+					<TabControl default="0" visible="0" height="45" modifier="0" Location="0">
+						<Options>264</Options>
+						<ObjectList membercount="4">
+							<LayoutObject hash="9AC33341150B4A586E8625077FF6AFEA" id="5" type="Panel" name="" kind="12">
+								<SourceUUID>6A041D55-7847-463B-8BE1-FD3FFF238235</SourceUUID>
+								<Bounds top="0" left="0" bottom="441" right="659"></Bounds>
+								<Options>3758096384</Options>
+								<TabPanel size="145" absolute="0">
+									<Options>1</Options>
+									<Calculation>
+										<Text><![CDATA["会社"]]></Text>
+									</Calculation>
+									<ObjectList membercount="7">
+										<LayoutObject hash="954FE36E27DE5A2553A737F92BA8465D" id="6" type="Button" name="" kind="10">
+											<SourceUUID>F15853FC-66CF-4BBC-B66C-C4E5CB4D7DE9</SourceUUID>
+											<Bounds top="247" left="289" bottom="322" right="369"></Bounds>
+											<Options>1342177280</Options>
+											<Button>
+												<Label></Label>
+												<IconData type="1" size="64">
+													<BinaryData>
+														<LibraryReference id="4" key="3016CAB4C485F18E6FE9DE1ACF8429EB"></LibraryReference>
+													</BinaryData>
+												</IconData>
+											</Button>
+											<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button:normal .icon
+{
+	-fm-icon-color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="09336A692E3F15E0464B668ECAF4BFFD" id="7" type="Web Viewer" name="Web サイト" kind="13">
+											<SourceUUID>A9F263BA-AC61-4171-8D81-94A8F968AF7B</SourceUUID>
+											<Bounds top="145" left="17" bottom="425" right="642"></Bounds>
+											<Options>2952790016</Options>
+											<TabOrder membercount="1">
+												<Location id="0">11</Location>
+											</TabOrder>
+											<External type="WEBV" name="Web Viewer">
+												<Options>32771</Options>
+												<WebViewer>
+													<ParameterValues membercount="1">
+														<Parameter id="0">
+															<Calculation>
+																<Text><![CDATA[If ( IsEmpty ( 連絡先::Web サイト );"";"https://" & 連絡先::Web サイト)]]></Text>
+															</Calculation>
+														</Parameter>
+													</ParameterValues>
+												</WebViewer>
+											</External>
+										</LayoutObject>
+										<LayoutObject hash="2B7F2EE8D1C89F91D572726296631CCE" id="8" type="Edit Box" name="" kind="1">
+											<SourceUUID>29BDAE9A-315F-42EF-B06E-A85D0B10C605</SourceUUID>
+											<Bounds top="90" left="342" bottom="134" right="642"></Bounds>
+											<Options>805322752</Options>
+											<TabOrder membercount="1">
+												<Location id="0">10</Location>
+											</TabOrder>
+											<Field>
+												<FieldReference id="7" name="Web サイト" repetition="1">
+													<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+												</FieldReference>
+												<Options>1048800</Options>
+												<Display Style="0" show="1"></Display>
+												<Usage inputMode="0" type="1"></Usage>
+											</Field>
+											<ExtendedAttributes>
+												<Formatting>
+													<Graphic>
+														<Options>5</Options>
+													</Graphic>
+													<Time>
+														<Options>143</Options>
+													</Time>
+													<Numeric>
+														<Options>2304</Options>
+														<Style>
+															<Negative>
+																<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+															</Negative>
+														</Style>
+														<DecimalDigits>0</DecimalDigits>
+													</Numeric>
+												</Formatting>
+											</ExtendedAttributes>
+											<Accessibility>
+												<Label>9</Label>
+											</Accessibility>
+											<Tooltip>
+												<Calculation>
+													<Text><![CDATA["Web サイト"]]></Text>
+												</Calculation>
+											</Tooltip>
+										</LayoutObject>
+										<LayoutObject hash="DCF52677238AA82CA358DC9DE4F8CC2B" id="9" type="Text" name="" kind="2">
+											<SourceUUID>D3D97C9B-42D8-45CB-84DD-877EFBEA98CD</SourceUUID>
+											<Bounds top="65" left="342" bottom="86" right="610"></Bounds>
+											<Options>805306368</Options>
+											<Text>
+												<Options>2</Options>
+												<StyledText>
+													<Data><![CDATA[Web サイト]]></Data>
+												</StyledText>
+											</Text>
+											<LocalCSS type="ThemeCustomStyle" name="uppercase-secondary-text" displayName="Uppercase | Secondary"><![CDATA[self.uppercase-secondary-text
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="0CD0B7B50879CAF5D2A408CDFD7E8DF4" id="10" type="Drop-down List" name="会社" kind="1">
+											<SourceUUID>2960F41B-BFED-445A-B6C7-1AEE58D35DF5</SourceUUID>
+											<Bounds top="90" left="17" bottom="134" right="317"></Bounds>
+											<Options>805322752</Options>
+											<TabOrder membercount="1">
+												<Location id="0">9</Location>
+											</TabOrder>
+											<Field>
+												<FieldReference id="5" name="会社" repetition="1">
+													<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+												</FieldReference>
+												<Options>527584</Options>
+												<Display Style="1" show="1">
+													<ValueListReference id="5" name="会社"></ValueListReference>
+												</Display>
+												<Usage inputMode="0" type="1"></Usage>
+											</Field>
+											<ExtendedAttributes>
+												<Formatting>
+													<Graphic>
+														<Options>5</Options>
+													</Graphic>
+													<Time>
+														<Options>143</Options>
+													</Time>
+													<Numeric>
+														<Options>2304</Options>
+														<Style>
+															<Negative>
+																<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+															</Negative>
+														</Style>
+														<DecimalDigits>0</DecimalDigits>
+													</Numeric>
+												</Formatting>
+											</ExtendedAttributes>
+											<Accessibility>
+												<Label>11</Label>
+											</Accessibility>
+											<Tooltip>
+												<Calculation>
+													<Text><![CDATA["会社"]]></Text>
+												</Calculation>
+											</Tooltip>
+										</LayoutObject>
+										<LayoutObject hash="7812419D0A42B9F5BD1017F84838A2F0" id="11" type="Text" name="" kind="2">
+											<SourceUUID>98DEE217-E515-4ADC-88BE-BFE3C5B46E1D</SourceUUID>
+											<Bounds top="65" left="17" bottom="86" right="317"></Bounds>
+											<Options>805306368</Options>
+											<Text>
+												<Options>2</Options>
+												<StyledText>
+													<Data><![CDATA[会社]]></Data>
+												</StyledText>
+											</Text>
+											<LocalCSS type="ThemeCustomStyle" name="uppercase-secondary-text" displayName="Uppercase | Secondary"><![CDATA[self.uppercase-secondary-text
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="67AFAE1F5EB05D1D582BD8CF57BB30D7" id="12" type="Button" name="" kind="10">
+											<SourceUUID>46FFCEFD-6FFB-4D27-A287-C05164512937</SourceUUID>
+											<Bounds top="60" left="610" bottom="86" right="650"></Bounds>
+											<Options>805306376</Options>
+											<TabOrder membercount="1">
+												<Location id="0">0</Location>
+											</TabOrder>
+											<Button>
+												<Label></Label>
+												<IconData type="1" size="22">
+													<BinaryData>
+														<LibraryReference id="4" key="3016CAB4C485F18E6FE9DE1ACF8429EB"></LibraryReference>
+													</BinaryData>
+												</IconData>
+											</Button>
+											<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+									</ObjectList>
+								</TabPanel>
+							</LayoutObject>
+							<LayoutObject hash="7BF35A4268FFD2B3CDC8ACCE133D8A00" id="13" type="Panel" name="" kind="12">
+								<SourceUUID>F7EF8FC6-798F-46DE-8F7C-515101E9D6D2</SourceUUID>
+								<Bounds top="0" left="0" bottom="441" right="659"></Bounds>
+								<Options>3758096384</Options>
+								<TabPanel size="180" absolute="143">
+									<Options>1</Options>
+									<Calculation>
+										<Text><![CDATA["電話/FAX"]]></Text>
+									</Calculation>
+									<ObjectList membercount="2">
+										<LayoutObject hash="4B0310A7D4FD4F55379FFB0B9D05F1D9" id="14" type="Portal" name="" kind="9">
+											<SourceUUID>4FE8CDA2-45CF-4DA5-AAD9-B05338839C22</SourceUUID>
+											<Bounds top="90" left="10" bottom="397" right="650"></Bounds>
+											<Options>4026531840</Options>
+											<Portal>
+												<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+												<Options show="5">273</Options>
+												<ObjectList membercount="3">
+													<LayoutObject hash="1EF56745578D3FB6CEAB8B3517A16E22" id="15" type="Edit Box" name="" kind="1">
+														<SourceUUID>2633DACC-34A6-49FC-A603-08C528FB87D5</SourceUUID>
+														<Bounds top="8" left="212" bottom="52" right="629"></Bounds>
+														<Options>1879064576</Options>
+														<TabOrder membercount="1">
+															<Location id="0">14</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="2" name="番号" repetition="1">
+																<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["番号"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["番号"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="5811E9757051022AC0274592A98069B3" id="16" type="Pop-up Menu" name="" kind="1">
+														<SourceUUID>E11AB6AB-E2D2-40AF-8482-7A41CB8E7D67</SourceUUID>
+														<Bounds top="8" left="28" bottom="52" right="208"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">13</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="1" name="タイプ" repetition="1">
+																<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>656609</Options>
+															<Display Style="2" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["タイプ"]]></Text>
+																	</Calculation>
+																</Placeholder>
+																<ValueListReference id="1" name="電話のタイプ"></ValueListReference>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<LocalCSS type="ThemeCustomStyle" name="fill-secondary-popup" displayName="Fill | Secondary"><![CDATA[self.fill-secondary-popup
+{
+}
+]]></LocalCSS>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["タイプ"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="B737BD6382FA1A941976B9C34107FBAA" id="17" type="Button" name="" kind="10">
+														<SourceUUID>990B287A-3D7F-464E-970A-F1C0A6237868</SourceUUID>
+														<Bounds top="17" left="4" bottom="46" right="24"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">12</Location>
+														</TabOrder>
+														<Button>
+															<Label></Label>
+															<IconData type="1" size="16">
+																<BinaryData>
+																	<LibraryReference id="5" key="3B015F1BA4D546ACC0C7556FAEDF0B40"></LibraryReference>
+																</BinaryData>
+															</IconData>
+															<action>
+																<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+																	<ParameterValues membercount="1">
+																		<Parameter type="Boolean">
+																			<Boolean type="With dialog" id="128" value="True"></Boolean>
+																		</Parameter>
+																	</ParameterValues>
+																</Step>
+															</action>
+														</Button>
+														<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["削除"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+												</ObjectList>
+											</Portal>
+											<LocalCSS type="ThemeCustomStyle" name="line-secondary-portal" displayName="Line | Secondary"><![CDATA[self.line-secondary-portal
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="3847D3A7EE854A1D0D7B718FAF96C7EF" id="18" type="Button" name="" kind="10">
+											<SourceUUID>E1AB0539-C332-49AE-B22B-E3825AD74156</SourceUUID>
+											<Bounds top="60" left="610" bottom="86" right="650"></Bounds>
+											<Options>1610612744</Options>
+											<TabOrder membercount="1">
+												<Location id="0">0</Location>
+											</TabOrder>
+											<Button>
+												<Label></Label>
+												<IconData type="1" size="22">
+													<BinaryData>
+														<LibraryReference id="6" key="7F41FA00A4E3E2AEF9742A7235445647"></LibraryReference>
+													</BinaryData>
+												</IconData>
+											</Button>
+											<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+									</ObjectList>
+								</TabPanel>
+							</LayoutObject>
+							<LayoutObject hash="F5A91F52C3D833EBFECC996CEACDB088" id="19" type="Panel" name="" kind="12">
+								<SourceUUID>522ED02F-AAB4-4314-A3A5-5151A7CE3E3C</SourceUUID>
+								<Bounds top="0" left="0" bottom="441" right="659"></Bounds>
+								<Options>3758096384</Options>
+								<TabPanel size="193" absolute="321">
+									<Options>1</Options>
+									<Calculation>
+										<Text><![CDATA["電子メール"]]></Text>
+									</Calculation>
+									<ObjectList membercount="2">
+										<LayoutObject hash="FEBC11666B90EF4F63DAF97EF1634038" id="20" type="Portal" name="" kind="9">
+											<SourceUUID>B65AB236-666D-4CF1-9CAC-2716707170CB</SourceUUID>
+											<Bounds top="90" left="10" bottom="397" right="650"></Bounds>
+											<Options>4026531840</Options>
+											<Portal>
+												<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+												<Options show="5">273</Options>
+												<ObjectList membercount="3">
+													<LayoutObject hash="1284B2DCF746CA206404C2439617519A" id="21" type="Edit Box" name="" kind="1">
+														<SourceUUID>7C0B98FE-5FDF-45D3-A250-4F7ECAD52092</SourceUUID>
+														<Bounds top="8" left="212" bottom="52" right="629"></Bounds>
+														<Options>1879064576</Options>
+														<TabOrder membercount="1">
+															<Location id="0">17</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="1" name="アドレス" repetition="1">
+																<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["電子メールアドレス"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["電子メールアドレス"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="E0B70C256BEA2A4D39923C873F0BAEB0" id="22" type="Pop-up Menu" name="" kind="1">
+														<SourceUUID>748C8D55-7BFB-4FDE-A6AF-2968F995DD12</SourceUUID>
+														<Bounds top="8" left="28" bottom="52" right="208"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">16</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="2" name="タイプ" repetition="1">
+																<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>656609</Options>
+															<Display Style="2" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["タイプ"]]></Text>
+																	</Calculation>
+																</Placeholder>
+																<ValueListReference id="2" name="電子メールのタイプ"></ValueListReference>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<LocalCSS type="ThemeCustomStyle" name="fill-secondary-popup" displayName="Fill | Secondary"><![CDATA[self.fill-secondary-popup
+{
+}
+]]></LocalCSS>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["タイプ"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="D5829921A7CBA5649CDCC33B2DCF21DF" id="23" type="Button" name="" kind="10">
+														<SourceUUID>DD3E2D28-EF40-475D-96B7-C1A540A66A48</SourceUUID>
+														<Bounds top="17" left="4" bottom="46" right="24"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">15</Location>
+														</TabOrder>
+														<Button>
+															<Label></Label>
+															<IconData type="1" size="16">
+																<BinaryData>
+																	<LibraryReference id="5" key="3B015F1BA4D546ACC0C7556FAEDF0B40"></LibraryReference>
+																</BinaryData>
+															</IconData>
+															<action>
+																<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+																	<ParameterValues membercount="1">
+																		<Parameter type="Boolean">
+																			<Boolean type="With dialog" id="128" value="True"></Boolean>
+																		</Parameter>
+																	</ParameterValues>
+																</Step>
+															</action>
+														</Button>
+														<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["削除"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+												</ObjectList>
+											</Portal>
+											<LocalCSS type="ThemeCustomStyle" name="line-secondary-portal" displayName="Line | Secondary"><![CDATA[self.line-secondary-portal
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="7EE715F0C821D631AB42ACB0A6294B46" id="24" type="Button" name="" kind="10">
+											<SourceUUID>A0A783E8-BC26-4EFD-9E8F-E78B0A2D68F3</SourceUUID>
+											<Bounds top="60" left="610" bottom="86" right="650"></Bounds>
+											<Options>1610612744</Options>
+											<TabOrder membercount="1">
+												<Location id="0">0</Location>
+											</TabOrder>
+											<Button>
+												<Label></Label>
+												<IconData type="1" size="22">
+													<BinaryData>
+														<LibraryReference id="7" key="40E5FC0187FD0938550F24C7275C0377"></LibraryReference>
+													</BinaryData>
+												</IconData>
+											</Button>
+											<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+									</ObjectList>
+								</TabPanel>
+							</LayoutObject>
+							<LayoutObject hash="F489F240990E9D41EB2261EF66EA8E99" id="25" type="Panel" name="" kind="12">
+								<SourceUUID>A05C4477-5472-4F21-9259-13D3A8E11086</SourceUUID>
+								<Bounds top="0" left="0" bottom="441" right="659"></Bounds>
+								<Options>3758096384</Options>
+								<TabPanel size="147" absolute="512">
+									<Options>1</Options>
+									<Calculation>
+										<Text><![CDATA["住所"]]></Text>
+									</Calculation>
+									<ObjectList membercount="2">
+										<LayoutObject hash="AEA48175F708D6FF19721FB8D8033823" id="26" type="Portal" name="" kind="9">
+											<SourceUUID>53D9A745-C4B9-45EC-B9FC-CA98C62F70F4</SourceUUID>
+											<Bounds top="90" left="10" bottom="410" right="650"></Bounds>
+											<Options>4026531840</Options>
+											<Portal>
+												<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+												<Options show="2">273</Options>
+												<ObjectList membercount="8">
+													<LayoutObject hash="FC2ECACFD09AD0D695DBD1BD680CB497" id="27" type="Edit Box" name="" kind="1">
+														<SourceUUID>96B5D4AF-3DD0-42D5-8F2A-84C3D5ECECB1</SourceUUID>
+														<Bounds top="104" left="450" bottom="148" right="629"></Bounds>
+														<Options>1879064576</Options>
+														<TabOrder membercount="1">
+															<Location id="0">25</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="6" name="国" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["国"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["国"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="88C95326E72EC0101B668526B9C5D9FB" id="28" type="Edit Box" name="" kind="1">
+														<SourceUUID>C0B8307E-1229-4860-86D6-2E9EEBDDEB84</SourceUUID>
+														<Bounds top="104" left="321" bottom="148" right="446"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">24</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="5" name="郵便番号" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["郵便番号"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["郵便番号"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="A2EFB4876023C3A08E69CBF2212B704A" id="29" type="Edit Box" name="" kind="1">
+														<SourceUUID>E5468C32-C939-4A24-8B16-AA47A0E3612D</SourceUUID>
+														<Bounds top="104" left="198" bottom="148" right="317"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">23</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="4" name="州" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["州"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["州"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="2B77D05B85014CA90584A2959980DEEE" id="30" type="Edit Box" name="" kind="1">
+														<SourceUUID>8EE2C1C2-8B4C-4341-A962-C8BEF9F678B9</SourceUUID>
+														<Bounds top="104" left="28" bottom="148" right="194"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">22</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="3" name="市" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["市"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["市"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="FA5F16516731F6F2415245378746FADD" id="31" type="Edit Box" name="" kind="1">
+														<SourceUUID>10660355-9683-41D3-9DCA-2A02A659109B</SourceUUID>
+														<Bounds top="56" left="450" bottom="100" right="629"></Bounds>
+														<Options>1879064576</Options>
+														<TabOrder membercount="1">
+															<Location id="0">21</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="1" name="住所 2" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["住所 2"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["住所 2"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="BC3F3E3050FB378991856A2CDADF9C1D" id="32" type="Edit Box" name="" kind="1">
+														<SourceUUID>008B40DC-7240-4318-AB26-E88931D140B3</SourceUUID>
+														<Bounds top="56" left="28" bottom="100" right="446"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">20</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="2" name="住所 1" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>131296</Options>
+															<Display Style="0" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["住所 1"]]></Text>
+																	</Calculation>
+																</Placeholder>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["住所 1"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="8963DEB2B143A936EBDE4E23F0319A80" id="33" type="Pop-up Menu" name="" kind="1">
+														<SourceUUID>DF6F1B9A-5CDA-43BA-9DBE-B5C14A107863</SourceUUID>
+														<Bounds top="8" left="28" bottom="52" right="629"></Bounds>
+														<Options>1879064576</Options>
+														<TabOrder membercount="1">
+															<Location id="0">19</Location>
+														</TabOrder>
+														<Field>
+															<FieldReference id="7" name="タイプ" repetition="1">
+																<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+															</FieldReference>
+															<Options>656609</Options>
+															<Display Style="2" show="1">
+																<Placeholder findMode="True">
+																	<Calculation>
+																		<Text><![CDATA["タイプ"]]></Text>
+																	</Calculation>
+																</Placeholder>
+																<ValueListReference id="4" name="住所のタイプ"></ValueListReference>
+															</Display>
+															<Usage inputMode="0" type="1"></Usage>
+														</Field>
+														<LocalCSS type="ThemeCustomStyle" name="fill-secondary-popup" displayName="Fill | Secondary"><![CDATA[self.fill-secondary-popup
+{
+}
+]]></LocalCSS>
+														<ExtendedAttributes>
+															<Formatting>
+																<Graphic>
+																	<Options>5</Options>
+																</Graphic>
+																<Time>
+																	<Options>143</Options>
+																</Time>
+																<Numeric>
+																	<Options>2304</Options>
+																	<Style>
+																		<Negative>
+																			<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+																		</Negative>
+																	</Style>
+																	<DecimalDigits>0</DecimalDigits>
+																</Numeric>
+															</Formatting>
+														</ExtendedAttributes>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["タイプ"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+													<LayoutObject hash="D6A0BB2B9CDFB6C3D0CFB562BA03B5ED" id="34" type="Button" name="" kind="10">
+														<SourceUUID>99563C8C-399F-416B-ADA3-50C429D8E164</SourceUUID>
+														<Bounds top="17" left="4" bottom="46" right="24"></Bounds>
+														<Options>805322752</Options>
+														<TabOrder membercount="1">
+															<Location id="0">18</Location>
+														</TabOrder>
+														<Button>
+															<Label></Label>
+															<IconData type="1" size="16">
+																<BinaryData>
+																	<LibraryReference id="5" key="3B015F1BA4D546ACC0C7556FAEDF0B40"></LibraryReference>
+																</BinaryData>
+															</IconData>
+															<action>
+																<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+																	<ParameterValues membercount="1">
+																		<Parameter type="Boolean">
+																			<Boolean type="With dialog" id="128" value="True"></Boolean>
+																		</Parameter>
+																	</ParameterValues>
+																</Step>
+															</action>
+														</Button>
+														<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+														<Tooltip>
+															<Calculation>
+																<Text><![CDATA["削除"]]></Text>
+															</Calculation>
+														</Tooltip>
+													</LayoutObject>
+												</ObjectList>
+											</Portal>
+											<LocalCSS type="ThemeCustomStyle" name="line-secondary-portal" displayName="Line | Secondary"><![CDATA[self.line-secondary-portal
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject hash="F4EFFE48C584ED17F8DB40FC96545373" id="35" type="Button" name="" kind="10">
+											<SourceUUID>4E8FC407-6854-421F-8B6C-5A193854CB68</SourceUUID>
+											<Bounds top="60" left="610" bottom="86" right="650"></Bounds>
+											<Options>1610612744</Options>
+											<TabOrder membercount="1">
+												<Location id="0">0</Location>
+											</TabOrder>
+											<Button>
+												<Label></Label>
+												<IconData type="1" size="22">
+													<BinaryData>
+														<LibraryReference id="8" key="E14FCCCCAF1F17CD559F15523078B66F"></LibraryReference>
+													</BinaryData>
+												</IconData>
+											</Button>
+											<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+										</LayoutObject>
+									</ObjectList>
+								</TabPanel>
+							</LayoutObject>
+						</ObjectList>
+					</TabControl>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	text-align: justify;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="9041D835B383B8143DE94EC46D87E8C5" id="36" type="Rectangle" name="" kind="5">
+					<SourceUUID>3AACD3A2-2F3E-4E02-8026-0624C364031E</SourceUUID>
+					<Bounds top="224" left="15" bottom="665" right="340"></Bounds>
+					<Options>4026531840</Options>
+					<Rectangle renderFormat="0"></Rectangle>
+					<LocalCSS type="ThemeCustomStyle" name="knockout-shape" displayName="Knockout"><![CDATA[self.knockout-shape
+{
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="BAEA0E13675077B992930981CA3AC818" id="37" type="Drop-down List" name="" kind="1">
+					<SourceUUID>53413375-89DE-4C7E-ABD5-E2FEC7C89D60</SourceUUID>
+					<Bounds top="605" left="32" bottom="649" right="323"></Bounds>
+					<Options>3489677312</Options>
+					<TabOrder membercount="1">
+						<Location id="0">7</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="6" name="役職" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>658656</Options>
+						<Display Style="1" show="1">
+							<Placeholder findMode="True">
+								<Calculation>
+									<Text><![CDATA["役職"]]></Text>
+								</Calculation>
+							</Placeholder>
+							<ValueListReference id="6" name="役職"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS type="ThemeCustomStyle" name="fill-secondary-dropdown" displayName="Fill | Secondary"><![CDATA[self.fill-secondary-dropdown
+{
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>0</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["役職"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+				<LayoutObject hash="19EE9609859AC951DED5B46703EED8B5" id="38" type="Edit Box" name="姓" kind="1">
+					<SourceUUID>F894000F-34D0-4BDA-9031-4267974373AA</SourceUUID>
+					<Bounds top="549" left="32" bottom="593" right="323"></Bounds>
+					<Options>3489677312</Options>
+					<TabOrder membercount="1">
+						<Location id="0">6</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="2" name="姓" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1179872</Options>
+						<Display Style="0" show="1">
+							<Placeholder findMode="True">
+								<Calculation>
+									<Text><![CDATA["姓"]]></Text>
+								</Calculation>
+							</Placeholder>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>0</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["姓"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+				<LayoutObject hash="A5AC0F5C0BC9E62543B97BD792BF376F" id="39" type="Edit Box" name="名" kind="1">
+					<SourceUUID>0334231D-82BF-4F6B-AB92-46ECDBE0CA06</SourceUUID>
+					<Bounds top="501" left="32" bottom="545" right="323"></Bounds>
+					<Options>3489677312</Options>
+					<TabOrder membercount="1">
+						<Location id="0">4</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="1" name="名" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1179872</Options>
+						<Display Style="0" show="1">
+							<Placeholder findMode="True">
+								<Calculation>
+									<Text><![CDATA["名"]]></Text>
+								</Calculation>
+							</Placeholder>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>0</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["名"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+				<LayoutObject hash="167689272BA48624597B8DB1AC84BC85" id="40" type="Pop-up Menu" name="" kind="1">
+					<SourceUUID>EAF4F3FF-75DE-4B5D-8BC4-E95B44B62EB4</SourceUUID>
+					<Bounds top="453" left="32" bottom="497" right="323"></Bounds>
+					<Options>3489677312</Options>
+					<TabOrder membercount="1">
+						<Location id="0">3</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="4" name="敬称" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>656417</Options>
+						<Display Style="2" show="1">
+							<Placeholder findMode="True">
+								<Calculation>
+									<Text><![CDATA["敬称"]]></Text>
+								</Calculation>
+							</Placeholder>
+							<ValueListReference id="3" name="敬称"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2572</Options>
+								<DecimalPoint>.</DecimalPoint>
+								<Symbol>$</Symbol>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["敬称"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+				<LayoutObject hash="C2329A9908358FF06FFA09635D8A2646" id="41" type="Container" name="" kind="1">
+					<SourceUUID>A7CB72AF-416D-41A0-BC7F-13B6947184E3</SourceUUID>
+					<Bounds top="224" left="15" bottom="439" right="340"></Bounds>
+					<Options>4026548224</Options>
+					<TabOrder membercount="1">
+						<Location id="0">27</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="3" name="写真" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1179680</Options>
+						<Display Style="0" show="1">
+							<Placeholder findMode="True">
+								<Calculation>
+									<Text><![CDATA["写真"]]></Text>
+								</Calculation>
+							</Placeholder>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS type="ThemeCustomStyle" name="fill-container" displayName="Fill | Secondary"><![CDATA[self.fill-container
+{
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>7</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>0</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Tooltip>
+						<Calculation>
+							<Text><![CDATA["写真"]]></Text>
+						</Calculation>
+					</Tooltip>
+				</LayoutObject>
+				<LayoutObject hash="9D521EA8A1B6D04D2A1637A5A20AC580" id="42" type="Button" name="" kind="10">
+					<SourceUUID>7ECF0B6E-638C-4AD6-9AC1-5157782DFBBA</SourceUUID>
+					<Bounds top="241" left="291" bottom="267" right="331"></Bounds>
+					<Options>1610612744</Options>
+					<TabOrder membercount="1">
+						<Location id="0">0</Location>
+					</TabOrder>
+					<Button>
+						<Label></Label>
+						<IconData type="1" size="22">
+							<BinaryData>
+								<LibraryReference id="2" key="A0943109E687A10BB19DA66BE1E8A04A"></LibraryReference>
+							</BinaryData>
+						</IconData>
+					</Button>
+					<LocalCSS type="ThemeCustomStyle" name="minimum-secondary-button" displayName="Minimum | Secondary"><![CDATA[self.minimum-secondary-button
+{
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="AEDADE51C66E9842F0226BBCAD24AEAD" id="43" type="Rectangle" name="" kind="5">
+					<SourceUUID>600A14EF-BD01-4A7A-A205-4F40117D4D3F</SourceUUID>
+					<Bounds top="161" left="15" bottom="215" right="1008"></Bounds>
+					<Options>1879048192</Options>
+					<Rectangle renderFormat="0"></Rectangle>
+					<LocalCSS type="ThemeCustomStyle" name="inverted-shape" displayName="Inverted"><![CDATA[self.inverted-shape
+{
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject hash="AE5F10544C3A2AFAB92F3A0D0279C73B" id="44" type="Button" name="" kind="10">
+					<SourceUUID>4ECE3A39-A231-403E-99D0-312328C1FF05</SourceUUID>
+					<Bounds top="187" left="648" bottom="206" right="991"></Bounds>
+					<Options>1879048192</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>10</Options>
+								<StyledText>
+									<Data><![CDATA[<<会社>>]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="16"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="2" name="入力フィールドへ移動"></ScriptReference>
+							<Calculation>
+								<Text><![CDATA["会社"]]></Text>
+							</Calculation>
+						</action>
+					</Button>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	font-size: 13pt;
+	color: rgba(100%,100%,100%,1);
+	text-align: left;
+	-fm-text-vertical-align: top;
+}
+self:pressed .self
+{
+	background-image: none;
+	background-color: rgba(60.3922%,60.3922%,60.3922%,1);
+	border-image-source: none;
+	color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(100%,100%,100%,0);
+	border-right-color: rgba(100%,100%,100%,0);
+	border-bottom-color: rgba(100%,100%,100%,0);
+	border-left-color: rgba(100%,100%,100%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+}
+self:normal .inner_border
+{
+	padding-top: 2pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 1pt;
+}
+self:normal .icon
+{
+	background-position: left top;
+	-fm-icon-color: rgba(100%,100%,100%,1);
+}
+self:pressed .icon
+{
+	-fm-icon-color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>18700</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject hash="67DF3BC2638392FF1A08A6E5D687D1E9" id="45" type="Text" name="" kind="2">
+					<SourceUUID>F4763AB6-CE3F-4079-A912-366780949E3B</SourceUUID>
+					<Bounds top="170" left="648" bottom="189" right="991"></Bounds>
+					<Options>1879048193</Options>
+					<Text>
+						<Options>2</Options>
+						<StyledText>
+							<Data><![CDATA[会社]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ThemeCustomStyle" name="small-secondary-text" displayName="Small | Secondary"><![CDATA[self.small-secondary-text
+{
+}
+]]></LocalCSS>
+					<Conditions>
+						<Formatting membercount="1">
+							<Condition type="0" id="0">
+								<Options>3</Options>
+								<Calculation>
+									<Text><![CDATA[IsEmpty ( 連絡先::会社 )]]></Text>
+								</Calculation>
+								<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	color: rgba(49.4118%,49.0196%,49.8039%,1);
+}
+]]></LocalCSS>
+							</Condition>
+						</Formatting>
+					</Conditions>
+				</LayoutObject>
+				<LayoutObject hash="2A0A00F7E8AC4C78C039E7891C07449D" id="46" type="Button" name="" kind="10">
+					<SourceUUID>AA4EDBA0-A82D-479A-BC21-80F8385F28C7</SourceUUID>
+					<Bounds top="187" left="375" bottom="206" right="641"></Bounds>
+					<Options>805306368</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>10</Options>
+								<StyledText>
+									<Data><![CDATA[<<姓>>]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="16"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="2" name="入力フィールドへ移動"></ScriptReference>
+							<Calculation>
+								<Text><![CDATA["姓"]]></Text>
+							</Calculation>
+						</action>
+					</Button>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	font-size: 13pt;
+	color: rgba(100%,100%,100%,1);
+	text-align: left;
+	-fm-text-vertical-align: top;
+}
+self:pressed .self
+{
+	background-image: none;
+	background-color: rgba(60.3922%,60.3922%,60.3922%,1);
+	border-image-source: none;
+	color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(100%,100%,100%,0);
+	border-right-color: rgba(100%,100%,100%,0);
+	border-bottom-color: rgba(100%,100%,100%,0);
+	border-left-color: rgba(100%,100%,100%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+}
+self:normal .inner_border
+{
+	padding-top: 2pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 1pt;
+}
+self:normal .icon
+{
+	background-position: left top;
+	-fm-icon-color: rgba(100%,100%,100%,1);
+}
+self:pressed .icon
+{
+	-fm-icon-color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>18700</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject hash="368BF6438921B052183D9C02CFA8A927" id="47" type="Text" name="" kind="2">
+					<SourceUUID>66027B22-4A9F-44D4-8FFC-D97668114913</SourceUUID>
+					<Bounds top="170" left="375" bottom="189" right="641"></Bounds>
+					<Options>805306369</Options>
+					<Text>
+						<Options>2</Options>
+						<StyledText>
+							<Data><![CDATA[姓]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ThemeCustomStyle" name="small-secondary-text" displayName="Small | Secondary"><![CDATA[self.small-secondary-text
+{
+}
+]]></LocalCSS>
+					<Conditions>
+						<Formatting membercount="1">
+							<Condition type="0" id="0">
+								<Options>3</Options>
+								<Calculation>
+									<Text><![CDATA[IsEmpty ( 連絡先::姓 )]]></Text>
+								</Calculation>
+								<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	color: rgba(49.4118%,49.0196%,49.8039%,1);
+}
+]]></LocalCSS>
+							</Condition>
+						</Formatting>
+					</Conditions>
+				</LayoutObject>
+				<LayoutObject hash="336732D12279AF44964EA1FAA1D0E245" id="48" type="Button" name="" kind="10">
+					<SourceUUID>C647B51D-78F1-4DD0-A56C-435115976DA3</SourceUUID>
+					<Bounds top="187" left="102" bottom="206" right="368"></Bounds>
+					<Options>805306368</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>10</Options>
+								<StyledText>
+									<Data><![CDATA[<<名>>]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="16"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="2" name="入力フィールドへ移動"></ScriptReference>
+							<Calculation>
+								<Text><![CDATA["名"]]></Text>
+							</Calculation>
+						</action>
+					</Button>
+					<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	font-size: 13pt;
+	color: rgba(100%,100%,100%,1);
+	text-align: left;
+	-fm-text-vertical-align: top;
+}
+self:pressed .self
+{
+	background-image: none;
+	background-color: rgba(60.3922%,60.3922%,60.3922%,1);
+	border-image-source: none;
+	color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(100%,100%,100%,0);
+	border-right-color: rgba(100%,100%,100%,0);
+	border-bottom-color: rgba(100%,100%,100%,0);
+	border-left-color: rgba(100%,100%,100%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+}
+self:normal .inner_border
+{
+	padding-top: 2pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 1pt;
+}
+self:normal .icon
+{
+	background-position: left top;
+	-fm-icon-color: rgba(100%,100%,100%,1);
+}
+self:pressed .icon
+{
+	-fm-icon-color: rgba(90.1961%,90.1961%,90.1961%,1);
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>18700</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject hash="0EB7C10F59E703F93E541049D92E1DFD" id="49" type="Text" name="" kind="2">
+					<SourceUUID>FF580495-3322-43D2-B566-3631F77ED645</SourceUUID>
+					<Bounds top="170" left="102" bottom="189" right="368"></Bounds>
+					<Options>805306369</Options>
+					<Text>
+						<Options>2</Options>
+						<StyledText>
+							<Data><![CDATA[名]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS type="ThemeCustomStyle" name="small-secondary-text" displayName="Small | Secondary"><![CDATA[self.small-secondary-text
+{
+}
+]]></LocalCSS>
+					<Conditions>
+						<Formatting membercount="1">
+							<Condition type="0" id="0">
+								<Options>3</Options>
+								<Calculation>
+									<Text><![CDATA[IsEmpty ( 連絡先::名 )]]></Text>
+								</Calculation>
+								<LocalCSS type="ObjectCustomStyle" name="" displayName=""><![CDATA[self:normal .self
+{
+	color: rgba(49.5238%,49.0476%,50%,1);
+}
+]]></LocalCSS>
+							</Condition>
+						</Formatting>
+					</Conditions>
+				</LayoutObject>
+				<LayoutObject hash="0901920622276A5CB9094DC6E3EF32D5" id="50" type="Container" name="" kind="1">
+					<SourceUUID>E45EC0A8-0A86-4C8D-B37A-A1632BC5FCB0</SourceUUID>
+					<Bounds top="161" left="15" bottom="215" right="95"></Bounds>
+					<Options>805306376</Options>
+					<TabOrder membercount="1">
+						<Location id="0">0</Location>
+					</TabOrder>
+					<Field>
+						<FieldReference id="3" name="写真" repetition="1">
+							<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1179700</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS type="ThemeCustomStyle" name="fill-inverted-container" displayName="Fill | Inverted"><![CDATA[self.fill-inverted-container
+{
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>0</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<TableView>
+		<ObjectList membercount="18">
+			<TableViewLayoutObject hidden="False" id="1" name="敬称" width="120">
+				<FieldReference id="4" name="敬称" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="2" name="名" width="120">
+				<FieldReference id="1" name="名" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="3" name="姓" width="120">
+				<FieldReference id="2" name="姓" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="4" name="役職" width="120">
+				<FieldReference id="6" name="役職" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="5" name="会社" width="120">
+				<FieldReference id="5" name="会社" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="6" name="Web サイト" width="120">
+				<FieldReference id="7" name="Web サイト" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="7" name="タイプ" width="120">
+				<FieldReference id="1" name="タイプ" repetition="1">
+					<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="8" name="番号" width="120">
+				<FieldReference id="2" name="番号" repetition="1">
+					<TableOccurrenceReference id="1065092" name="電話番号"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="9" name="タイプ" width="120">
+				<FieldReference id="2" name="タイプ" repetition="1">
+					<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="10" name="アドレス" width="120">
+				<FieldReference id="1" name="アドレス" repetition="1">
+					<TableOccurrenceReference id="1065093" name="電子メールアドレス"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="11" name="タイプ" width="120">
+				<FieldReference id="7" name="タイプ" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="12" name="住所 1" width="120">
+				<FieldReference id="2" name="住所 1" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="13" name="住所 2" width="120">
+				<FieldReference id="1" name="住所 2" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="14" name="市" width="120">
+				<FieldReference id="3" name="市" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="15" name="州" width="120">
+				<FieldReference id="4" name="州" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="16" name="郵便番号" width="75">
+				<FieldReference id="5" name="郵便番号" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="17" name="国" width="120">
+				<FieldReference id="6" name="国" repetition="1">
+					<TableOccurrenceReference id="1065091" name="住所"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+			<TableViewLayoutObject hidden="False" id="18" name="写真" width="75">
+				<FieldReference id="3" name="写真" repetition="1">
+					<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				</FieldReference>
+			</TableViewLayoutObject>
+		</ObjectList>
+	</TableView>
+	<UUID modifications="16" userName="Takeshi Yamamoto" accountName="admin" timestamp="2025-12-01T18:00:45">8C10F6F4-BF22-4F71-876D-CC4D116D102D</UUID>
+	<SourceUUID>5BB24649-6D13-4E92-9477-002E0B9BD3B6</SourceUUID>
+	<GridStyle>
+		<Color red="0.500000" green="0.500000" blue="0.500000" alpha="1.000000"></Color>
+		<Style>5</Style>
+	</GridStyle>
+	<ClientType>0</ClientType>
+	<Options hidden="False">284362765</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
+	<LocalCSS type="ThemeCustomStyle" name="secondary-background" displayName="Secondary"><![CDATA[self.secondary-background
+{
+}
+]]></LocalCSS>
+</Layout>

@@ -1,0 +1,29 @@
+<Script>
+	<ScriptReference id="10" name="PSOS"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step hash="B40C6B03C896C8ACBF552DED9ECFAD66" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="3580A35DD44BF1A15B27567909486796" id="164" name="Perform Script on Server" enable="True">
+			<Options>64</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<ScriptReference id="9" name="名前を付けてXMLとして保存"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Wait for completion" id="256" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

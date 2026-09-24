@@ -1,0 +1,195 @@
+<FieldCatalog>
+	<SortOrder>1</SortOrder>
+	<CustomOrderList>
+		<key>1</key>
+		<key>2</key>
+		<key>3</key>
+		<key>4</key>
+		<key>5</key>
+		<key>6</key>
+		<key>7</key>
+		<key>8</key>
+		<key>9</key>
+		<key>10</key>
+		<key>11</key>
+		<key>12</key>
+		<key>13</key>
+		<key>14</key>
+	</CustomOrderList>
+	<UUID modifications="5" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-07-21T11:07:25">F4DBFC3E-C409-4A47-A32B-4ACC9E884F3D</UUID>
+	<BaseTableReference id="130" name="連絡先"></BaseTableReference>
+	<ObjectList membercount="14">
+		<Field id="1" name="名" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">16A8C6C8-2DCE-4C73-8DE3-BB6BD5639153</UUID>
+			<SourceUUID>AFB9D91A-340C-4921-867B-321542873B46</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="2" name="姓" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">C9D1B4E1-B0D9-43BE-B687-5473456E5AFB</UUID>
+			<SourceUUID>D02BBDDD-CEA5-4C58-843C-4202A9B2390B</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="3" name="写真" fieldtype="Normal" datatype="Binary" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">E70A59BB-AD81-4DA6-8CCC-217A98AC9983</UUID>
+			<SourceUUID>BC95DA99-6283-4EA6-8F8C-20B80138DD9D</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1"></Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="4" name="敬称" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">85D8063B-577D-40C5-B169-948EC54B9B8F</UUID>
+			<SourceUUID>CE4ED54A-3530-4F3E-8E8E-A133DBB93488</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="5" name="会社" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">EE624179-22C8-4110-802D-CFD1AAB946BD</UUID>
+			<SourceUUID>647ED978-6396-45C1-84BF-4495940B915E</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="6" name="役職" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">3487F773-1D4C-4C5F-BF68-0D44E86371E3</UUID>
+			<SourceUUID>6DDDA4EE-FB0F-478C-8E39-95B512180D13</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="7" name="Web サイト" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">79EA0167-3E67-4B8A-8266-482FE45D5BEA</UUID>
+			<SourceUUID>9AFDB2F1-BF49-42DA-A055-0E1324703138</SourceUUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="8" name="イニシャル" fieldtype="Calculated" datatype="Text" comment="">
+			<UUID modifications="2" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">8DB8BD94-9FB8-425C-AFA7-CC266E138C90</UUID>
+			<SourceUUID>B89CC07D-2A59-44F5-922E-57B8D51940AE</SourceUUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+				<Text><![CDATA[Case		( 		not IsEmpty ( 姓 ) ;		Left ( 姓 ; 1 ) ; 		not IsEmpty ( 名 ) ;		Left ( 名 ; 1 ) 		)]]></Text>
+			</Calculation>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="9" name="主キー" fieldtype="Normal" datatype="Text" comment="このテーブル内の各レコードの固有の識別子">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">B6831547-AD7A-4144-A1E9-A0242B142A7B</UUID>
+			<SourceUUID>7C0CF6E0-16B1-4D5F-A927-005B4B095015</SourceUUID>
+			<AutoEnter type="Calculated" prohibitModification="True" overwriteExisting="True" alwaysEvaluate="False">
+				<Calculated enable="True">
+					<Calculation>
+						<TableOccurrenceReference id="1065090" name="連絡先"></TableOccurrenceReference>
+						<Text><![CDATA[Get ( UUID )]]></Text>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<TagList primary="True">#^FMI* #_FMI_0 </TagList>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="10" name="作成者" fieldtype="Normal" datatype="Text" comment="各レコードを作成したユーザのアカウント名">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">D151A29C-5A24-457C-A2DE-D18052E7CDED</UUID>
+			<SourceUUID>7764FC78-0095-4259-9459-862EA5E1677E</SourceUUID>
+			<AutoEnter type="CreationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="11" name="修正者" fieldtype="Normal" datatype="Text" comment="各レコードを最後に修正したユーザのアカウント名">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">38D5C082-2C4D-4CF4-A2B7-3D23840E4673</UUID>
+			<SourceUUID>56133EE8-8DAC-4B7B-AC51-B10D21F77B0A</SourceUUID>
+			<AutoEnter type="ModificationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="12" name="作成情報タイムスタンプ" fieldtype="Normal" datatype="Timestamp" comment="各レコードが作成された日付と時刻">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">4E37DD25-6268-4E7B-898F-EEDDBCC483E3</UUID>
+			<SourceUUID>919482FB-6E4C-442C-9B25-A31AA2B6086F</SourceUUID>
+			<AutoEnter type="CreationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="13" name="修正情報タイムスタンプ" fieldtype="Normal" datatype="Timestamp" comment="各レコードが最後に修正された日付と時刻">
+			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">216ECBBD-F163-46C6-87F2-5C83D107B723</UUID>
+			<SourceUUID>772DDC8B-3D21-49D0-8C21-538CF4E40A15</SourceUUID>
+			<AutoEnter type="ModificationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="14" name="z_削除フラグ" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-07-21T11:07:25">ABF02A3E-F590-46BC-A1F3-AEE113C69D91</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

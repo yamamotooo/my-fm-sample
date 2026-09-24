@@ -1,0 +1,8 @@
+<ValueList id="4" name="住所のタイプ">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[自宅勤務先]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">670E41E0-14C1-4F99-9509-6F3DFA640587</UUID>
+	<SourceUUID>95A89A19-46DB-4975-993C-276217F71380</SourceUUID>
+</ValueList>

@@ -1,0 +1,8 @@
+<ValueList id="2" name="電子メールのタイプ">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[勤務先個人]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="Duc Ha" accountName="Admin" timestamp="2020-04-03T11:20:14">19D6C357-21A6-4DE8-ABE8-A70598AC374A</UUID>
+	<SourceUUID>D49EA12D-F2C4-4D14-835E-0109325530AC</SourceUUID>
+</ValueList>
