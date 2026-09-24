@@ -7,7 +7,7 @@ Save a Copy as XML [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; In
 Insert Text [ Select ; Target: $exe ; "C:\ProgramData\FileMaker\fm-xml-export-exploder\fm-xml-export-exploder.exe" ]
 Insert Text [ Select ; Target: $in ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\in\" ]
 Insert Text [ Select ; Target: $out ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\out\" ]
-Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30 ) ]
+Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30000 ) ]
 
 # #
 Insert Text [ Select ; Target: $bytes ; "@echo off
@@ -33,6 +33,18 @@ Close Data File [ ⚠️ PARAMETER "id" NOT PARSED ⚠️ ]
 Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( "cmd /c C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents" & Char ( 92 ) & $file; 30000 ) ]
 Delete File [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ]
 
+# git config --global user.name "fm-export-bot"
+  git config --global user.email "fm-export-bot@example.local"
+
+# cd "C:\Program Files\FileMaker\FileMaker Server\Data\Documents\rep"
+  
+  git init
+  git add --all
+  git commit -m "Initial commit"
+  git branch -M main
+
+# git remote add origin https://github.com/yamamotooo/my-fm-sample.git
+  git push -u origin main
 
 
 

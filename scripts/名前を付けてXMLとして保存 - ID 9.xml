@@ -1,6 +1,6 @@
 <Script>
 	<ScriptReference id="9" name="名前を付けてXMLとして保存"></ScriptReference>
-	<ObjectList membercount="30">
+	<ObjectList membercount="35">
 		<Step hash="88ACD8EC659204D75DBBFB59D5AF4748" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
@@ -168,14 +168,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="4C81F80729780A1173D415ECAD640A1E" id="141" name="Set Variable" enable="True">
+		<Step hash="09DACB632BE8BB11ED972D896C236F36" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
 					<value>
 						<Calculation datatype="1" position="1">
 							<Calculation>
-								<Text><![CDATA[BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30 )]]></Text>
+								<Text><![CDATA[BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30000 )]]></Text>
 							</Calculation>
 						</Calculation>
 					</value>
@@ -426,35 +426,73 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="EC7584D6C7193835AF57A8E8D7D10F40" id="89" name="# (comment)" enable="True">
+		<Step hash="2CD887C1C2BB61FE974BFF70D2C66666" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="git config --global user.name &quot;fm-export-bot&quot;&#13;git config --global user.email &quot;fm-export-bot@example.local&quot;"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="EA357577C38EF7A68424E86EC6CDA633" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="5E40523CBB7FBA1350C2EF12E970C565" id="89" name="# (comment)" enable="True">
+		<Step hash="9569094088476572DA3DE8E0AFCD42F7" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="cd &quot;C:\Program Files\FileMaker\FileMaker Server\Data\Documents\rep&quot;&#13;&#13;git init&#13;git add --all&#13;git commit -m &quot;Initial commit&quot;&#13;git branch -M main"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="A01FC24D15EA582BB59C957A870AE890" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="F5DDD996EB70A9D221BA4B605D38EFA1" id="89" name="# (comment)" enable="True">
+		<Step hash="D70FFC62A8B69276551A49C574EC7C4B" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="git remote add origin https://github.com/yamamotooo/my-fm-sample.git&#13;git push -u origin main"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="975DD773D1FD55B1DCAD3D6016DEBFA5" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="CF9E693EE6AD1B9763F45B290ACD810F" id="89" name="# (comment)" enable="True">
+		<Step hash="94883F0668B3455220CE4CF968099D0B" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="45E06EC93E0C029FCF7DFF1CCEC48A7E" id="89" name="# (comment)" enable="True">
+		<Step hash="B2923423217512285B5E6567CD51B925" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="3FA74618A4B93D75CDCF4A8E5C3E65D2" id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="7F718AB17B932187D0B1DC3137648F16" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>

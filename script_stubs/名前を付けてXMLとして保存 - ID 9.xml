@@ -1,4 +1,4 @@
 <Script id="9" name="名前を付けてXMLとして保存">
-	<UUID modifications="104" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T14:53:51">49E1B565-CC39-44A2-8DC2-DE6E093C08A4</UUID>
-	<Options hidden="False" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">0</Options>
+	<UUID modifications="111" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T15:12:31">49E1B565-CC39-44A2-8DC2-DE6E093C08A4</UUID>
+	<Options hidden="True" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">8</Options>
 </Script>
