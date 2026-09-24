@@ -1,6 +1,6 @@
 <Script>
 	<ScriptReference id="3" name="名前でソート"></ScriptReference>
-	<ObjectList membercount="3">
+	<ObjectList membercount="4">
 		<Step hash="CCA56CDEBAB7D059C93CA30A050F5091" id="39" name="Sort Records" enable="True">
 			<SourceUUID>D8337A8C-8E73-4A2B-91A6-DB076EC96150</SourceUUID>
 			<Options>33587328</Options>
@@ -34,7 +34,15 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="F496993498A58A51413A163049A7FD53" id="89" name="# (comment)" enable="True">
+		<Step hash="43BEA28936C20F12EEDEAA4C3DF3B953" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="hoge"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="C06F3F867629AE87EC356093E355D854" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
