@@ -168,14 +168,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="09DACB632BE8BB11ED972D896C236F36" id="141" name="Set Variable" enable="True">
+		<Step hash="BCF8DC498CB4EB4D17C1B49852A0762E" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
 					<value>
 						<Calculation datatype="1" position="1">
 							<Calculation>
-								<Text><![CDATA[BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30000 )]]></Text>
+								<Text><![CDATA[BE_ExecuteSystemCommand ( $exe & " --obfuscate-passwords " & Quote ( $in ) & " " & Quote ( $out ); 30000 )]]></Text>
 							</Calculation>
 						</Calculation>
 					</value>

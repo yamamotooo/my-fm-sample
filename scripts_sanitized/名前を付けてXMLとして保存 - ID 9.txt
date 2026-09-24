@@ -7,7 +7,7 @@ Save a Copy as XML [ ⚠️ PARAMETER "UniversalPathList" NOT PARSED ⚠️ ; In
 Insert Text [ Select ; Target: $exe ; "C:\ProgramData\FileMaker\fm-xml-export-exploder\fm-xml-export-exploder.exe" ]
 Insert Text [ Select ; Target: $in ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\in\" ]
 Insert Text [ Select ; Target: $out ; "C:\PROGRA~1\FileMaker\FILEMA~1\Data\Documents\out\" ]
-Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " " & Quote ( $in ) & " " & Quote ( $out ); 30000 ) ]
+Set Variable [ $r[1] ; BE_ExecuteSystemCommand ( $exe & " --obfuscate-passwords " & Quote ( $in ) & " " & Quote ( $out ); 30000 ) ]
 
 # #
 Insert Text [ Select ; Target: $bytes ; "@echo off
