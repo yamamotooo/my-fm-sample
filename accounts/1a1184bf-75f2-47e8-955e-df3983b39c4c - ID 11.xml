@@ -1,0 +1,12 @@
+<Account id="11" kind="35" type="Microsoft Azure Group" enable="True">
+	<UUID modifications="9" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-07-21T11:12:12">F823C032-F608-4FCB-B5EF-26DF41F968FC</UUID>
+	<Description>Staff</Description>
+	<Authentication>
+		<AccountName>1a1184bf-75f2-47e8-955e-df3983b39c4c</AccountName>
+		<PasswordEncrypted>
+			<Context>ZBaoiHZ7OtJhqw==</Context>
+			<Data></Data>
+		</PasswordEncrypted>
+	</Authentication>
+	<PrivilegeSetReference id="5" name="Staff"></PrivilegeSetReference>
+</Account>

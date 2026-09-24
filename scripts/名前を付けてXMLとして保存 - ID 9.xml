@@ -59,7 +59,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="EB4A805E2662C83D1182CDA1F6B6B0F6" id="3" name="Save a Copy as XML" enable="True">
+		<Step hash="DE7BFF8F4A0F3578F0CB5C6ADD9F0A4E" id="3" name="Save a Copy as XML" enable="True">
 			<Options>49440</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="UniversalPathList">
@@ -81,7 +81,7 @@
 				<Parameter type="JSONOutput">
 					<Calculation datatype="1" position="1">
 						<Calculation>
-							<Text><![CDATA[JSONSetElement ( "{}" ;  [ "catalogs_included";	JSONMakeArray (    List (      //"PersistentStoreCatalog";      //"BaseDirectoryCatalog";      //"FileAccessCatalog";      //"ExternalDataSourceCatalog";      "BaseTableCatalog";      "TableOccurrenceCatalog";      "CustomFunctionsCatalog";      "ValueListCatalog";      "FieldCatalog";      "RelationshipCatalog";      //"CustomMenuCatalog";      //"CustomMenuSetCatalog";      "ScriptCatalog";      "ThemeCatalog";      "LayoutCatalog";      //"LibraryCatalog";      //"PrivilegeSetsCatalog";      //"ExtendedPrivilegesCatalog";      //"AccountsCatalog";      //"Metadata";      //""    ) ; ¶ ; JSONString ) ; JSONArray ] ;  [ "include_details" ; False ; JSONBoolean ] ;  [ "split_catalogs" ; False ; JSONBoolean ] ;  [ "standalone_binarydata" ; False ; JSONBoolean ])]]></Text>
+							<Text><![CDATA[JSONSetElement ( "{}" ;  [ "catalogs_included";	JSONMakeArray (    List (      //"PersistentStoreCatalog";      //"BaseDirectoryCatalog";      //"FileAccessCatalog";      //"ExternalDataSourceCatalog";      "BaseTableCatalog";      "TableOccurrenceCatalog";      "CustomFunctionsCatalog";      "ValueListCatalog";      "FieldCatalog";      "RelationshipCatalog";      //"CustomMenuCatalog";      //"CustomMenuSetCatalog";      "ScriptCatalog";      "ThemeCatalog";      "LayoutCatalog";      //"LibraryCatalog";      //"PrivilegeSetsCatalog";      //"ExtendedPrivilegesCatalog";      "AccountsCatalog";      //"Metadata";      //""    ) ; ¶ ; JSONString ) ; JSONArray ] ;  [ "include_details" ; False ; JSONBoolean ] ;  [ "split_catalogs" ; False ; JSONBoolean ] ;  [ "standalone_binarydata" ; False ; JSONBoolean ])]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
