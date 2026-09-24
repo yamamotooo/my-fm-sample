@@ -15,10 +15,11 @@
 		<key>12</key>
 		<key>13</key>
 		<key>14</key>
+		<key>15</key>
 	</CustomOrderList>
-	<UUID modifications="5" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-07-21T11:07:25">F4DBFC3E-C409-4A47-A32B-4ACC9E884F3D</UUID>
+	<UUID modifications="7" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T15:54:16">F4DBFC3E-C409-4A47-A32B-4ACC9E884F3D</UUID>
 	<BaseTableReference id="130" name="連絡先"></BaseTableReference>
-	<ObjectList membercount="14">
+	<ObjectList membercount="15">
 		<Field id="1" name="名" fieldtype="Normal" datatype="Text" comment="">
 			<UUID modifications="1" userName="david_mckee" accountName="Admin" timestamp="2020-04-14T19:13:20">16A8C6C8-2DCE-4C73-8DE3-BB6BD5639153</UUID>
 			<SourceUUID>AFB9D91A-340C-4921-867B-321542873B46</SourceUUID>
@@ -184,6 +185,16 @@
 			<AutoEnter type="ConstantData" prohibitModification="False">
 				<ConstantData>0</ConstantData>
 			</AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Japanese" id="31"></LanguageReference>
+			</Storage>
+			<Annotation></Annotation>
+			<DisplayNames enable="False"></DisplayNames>
+		</Field>
+		<Field id="15" name="hgoe" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T15:54:16">DC29E410-5FBC-43D0-A306-A84B8B5AA65D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
 			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
 			<Storage autoIndex="True" global="False" maxRepetitions="1">
 				<LanguageReference name="Japanese" id="31"></LanguageReference>
