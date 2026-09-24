@@ -1,0 +1,7 @@
+<ValueList id="7" name="会社のタイプ">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[取引先仕入先]]></Text>
+	</CustomValues>
+	<UUID modifications="0" userName="Takeshi Yamamoto" accountName="admin" timestamp="2026-09-24T16:47:34">90EC5D2D-F86E-4956-91C8-3932617EADCE</UUID>
+</ValueList>
