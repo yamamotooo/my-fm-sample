@@ -1,6 +1,6 @@
 <Script>
 	<ScriptReference id="9" name="名前を付けてXMLとして保存"></ScriptReference>
-	<ObjectList membercount="35">
+	<ObjectList membercount="36">
 		<Step hash="88ACD8EC659204D75DBBFB59D5AF4748" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
@@ -227,7 +227,29 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="3DC6F77830891FF055646387B3BABF8F" id="141" name="Set Variable" enable="True">
+		<Step hash="9BF348D7B869E34C413DEC42AEC6802B" id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( $bytes; "Auto update"; Get ( CurrentHostTimeStamp ) & " Auto update" )]]></Text>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$bytes"></Name>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="1D0E0FC07114CA057D01AA3C172D1F2D" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -249,7 +271,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="3A380EDD70F76568088E5D7312316C87" id="141" name="Set Variable" enable="True">
+		<Step hash="7CD0AD8CC1FA8B2C1FA0A2B251F1B141" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -271,7 +293,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="3A97B7C1192C17DBBC61FDC96199A178" id="141" name="Set Variable" enable="True">
+		<Step hash="FE7B64C271CB79A96A5B1EDD4B959A32" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -293,7 +315,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="17C049CFF7494EE3BBBCF53733CE5CE9" id="190" name="Create Data File" enable="True">
+		<Step hash="C7CAE5BCE9C50FDB7975E6727AB592BF" id="190" name="Create Data File" enable="True">
 			<Options>32</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="UniversalPathList">
@@ -308,7 +330,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="DBB71A48A347475E0DC3EA7838586ECE" id="191" name="Open Data File" enable="True">
+		<Step hash="7020D104656D700FD028BEE30DC54CB9" id="191" name="Open Data File" enable="True">
 			<Options>37</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="UniversalPathList">
@@ -331,7 +353,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="2CA910D2229F1C4AF9D0E5CDCA654367" id="192" name="Write to Data File" enable="True">
+		<Step hash="430B8F8BC76162AE2C50E6BBABEAABD9" id="192" name="Write to Data File" enable="True">
 			<Options>16903</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="id">
@@ -358,7 +380,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="FA8A189E4CEF5231D9A365C7308D3E3B" id="196" name="Close Data File" enable="True">
+		<Step hash="C6BC52A1BBB8CCCF6725FF4F0368C75A" id="196" name="Close Data File" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="id">
@@ -370,14 +392,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="E0959C4C1EF3BD9FD2ADD5FAEA995554" id="89" name="# (comment)" enable="True">
+		<Step hash="10BB823D7E548687D8615F653654EB57" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="50B6B5C96A4097A93A144368E82CBA6E" id="89" name="# (comment)" enable="True">
+		<Step hash="0018CEB20262F0F94BCDEB47FAAE4070" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
@@ -385,7 +407,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="500E9F65DF391D9B6E5577BCAD7FF075" id="141" name="Set Variable" enable="True">
+		<Step hash="0E3DDE0B56175AAB1B29B9D5C3C0C229" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -407,7 +429,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="755E660B5FF21225AE9831296FC8BE43" id="197" name="Delete File" enable="True">
+		<Step hash="0D23017A97FDE3A35D737087D19BFFA0" id="197" name="Delete File" enable="True">
 			<Options>32</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="UniversalPathList">
@@ -419,14 +441,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="01E4111A54506F1D562B381C216FCE70" id="89" name="# (comment)" enable="True">
+		<Step hash="E8F77E3E17603A1CE9FAD3D3C0DB7039" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="2CD887C1C2BB61FE974BFF70D2C66666" id="89" name="# (comment)" enable="True">
+		<Step hash="AB1F74B5FFF43B4FB1A9734A9F2274B4" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
@@ -434,14 +456,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="EA357577C38EF7A68424E86EC6CDA633" id="89" name="# (comment)" enable="True">
+		<Step hash="CA3AC4A75451EF4F03398034CB4B4374" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="9569094088476572DA3DE8E0AFCD42F7" id="89" name="# (comment)" enable="True">
+		<Step hash="65C1E632A3A8FB2B63B76D650E94D836" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
@@ -449,14 +471,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A01FC24D15EA582BB59C957A870AE890" id="89" name="# (comment)" enable="True">
+		<Step hash="3061664695F85EF48E2D751DE5746E2B" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="D70FFC62A8B69276551A49C574EC7C4B" id="89" name="# (comment)" enable="True">
+		<Step hash="2BB37F415D49028F27F5B91A03572A7E" id="89" name="# (comment)" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
@@ -464,35 +486,35 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="975DD773D1FD55B1DCAD3D6016DEBFA5" id="89" name="# (comment)" enable="True">
+		<Step hash="398051CBC2B1140BB3DEE1A41C31119C" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="94883F0668B3455220CE4CF968099D0B" id="89" name="# (comment)" enable="True">
+		<Step hash="8EA0F4096D486AAE7ADEFA1B4037775A" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B2923423217512285B5E6567CD51B925" id="89" name="# (comment)" enable="True">
+		<Step hash="8800C8FF9703D8081F3E2A636DD2FC52" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="3FA74618A4B93D75CDCF4A8E5C3E65D2" id="89" name="# (comment)" enable="True">
+		<Step hash="83CDB8E1E995073C3F1B640E3F48CEBE" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="7F718AB17B932187D0B1DC3137648F16" id="89" name="# (comment)" enable="True">
+		<Step hash="804CAC25F66F848CF0C38AF38993D409" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>

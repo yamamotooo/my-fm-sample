@@ -26,6 +26,7 @@ Insert Text [ Select ; Target: $bytes ; "@echo off
 				"%GIT%" push origin main >> "%LOG%" 2>&1
 				
 				echo ===== Done ===== >> "%LOG%"" ]
+Set Variable [ $bytes[1] ; Substitute ( $bytes; "Auto update"; Get ( CurrentHostTimeStamp ) & " Auto update" ) ]
 Set Variable [ $bytes[1] ; TextEncode ( $bytes ; "shift_jis" ; 4 ) ]
 Set Variable [ $file[1] ; Filter ( Get ( CurrentTimeStamp ); "1234567890" ) & ".bat" ]
 Set Variable [ $path[1] ; Get ( DocumentsPath ) & $file ]
