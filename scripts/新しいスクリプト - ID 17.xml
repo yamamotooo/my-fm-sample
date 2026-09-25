@@ -1,0 +1,40 @@
+<Script>
+	<ScriptReference id="17" name="新しいスクリプト"></ScriptReference>
+	<ObjectList membercount="5">
+		<Step hash="2974425E4FCB8DB67A6482A29BC8C49B" id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="#"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="2EC3EBAEB0B174BEA26743B6EAEF6EF4" id="71" name="Loop" enable="True">
+			<Options>256</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Collapsed" id="33554432" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="A7A2742440CF07FB95DB4E3FB7F76A8B" id="72" name="Exit Loop If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[1]]></Text>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step hash="4FAE3097F9089A64BE3EC12A2D710609" id="76" name="Set Field" enable="True">
+		</Step>
+		<Step hash="67CA7D528CD2DE08486319A071120B6D" id="73" name="End Loop" enable="True">
+		</Step>
+	</ObjectList>
+</Script>
